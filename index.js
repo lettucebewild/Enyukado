@@ -8,12 +8,8 @@ window.addEventListener('load', () => {
   // Only run intro if overlay and brand elements exist (login page)
   if (!overlay || !brand) return;
 
-  // ---------- RESET ON REFRESH ----------
-  // ensures animation shows again on refresh
-  sessionStorage.removeItem('enyukado_intro_done');
-
-  // ---------- SKIP ONLY IF BACK NAVIGATION ----------
-  if (sessionStorage.getItem('enyukado_intro_skip') === '1') {
+  // If the user is returning from another page (e.g. terms/privacy), skip intro
+  if (sessionStorage.getItem('enyukado_intro_done') === '1') {
     overlay.style.display = 'none';
     if (pageWrapper) {
       pageWrapper.style.transition = 'none';
@@ -22,28 +18,22 @@ window.addEventListener('load', () => {
     return;
   }
 
-  // ---------- INTRO ANIMATION ----------
   setTimeout(() => brand.classList.add('brand-in'), 500);
   setTimeout(() => tagline && tagline.classList.add('tagline-in'), 1600);
-
   setTimeout(() => {
     brand.classList.add('brand-out');
     tagline && tagline.classList.add('tagline-out');
   }, 3000);
-
   setTimeout(() => {
     overlay.classList.add('fade-out');
     pageWrapper && pageWrapper.classList.add('slide-in');
   }, 3500);
-
   setTimeout(() => {
     overlay.style.display = 'none';
-
-    // mark skip ONLY for back navigation use
-    sessionStorage.setItem('enyukado_intro_skip', '1');
+    // Mark intro as done for this session so it won't replay on back-navigation
+    sessionStorage.setItem('enyukado_intro_done', '1');
   }, 5200);
 });
-
 
 // ---------- ATTACH EVENTS on DOM ready ----------
 document.addEventListener('DOMContentLoaded', () => {
@@ -52,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
   attachSignupEvents();
 });
 
-
 // ---------- Toggle password visibility ----------
 function attachTogglePasswordEvents() {
   document.querySelectorAll('.toggle-pw').forEach(btn => {
@@ -60,11 +49,9 @@ function attachTogglePasswordEvents() {
       e.preventDefault();
       const targetId = btn.getAttribute('data-target');
       const input = document.getElementById(targetId);
-
       if (input) {
         const isHidden = input.type === 'password';
         input.type = isHidden ? 'text' : 'password';
-
         const svg = btn.querySelector('svg');
         if (svg) {
           if (input.type === 'text') {
@@ -78,8 +65,6 @@ function attachTogglePasswordEvents() {
   });
 }
 
-
-// ---------- LOGIN / SIGNUP SWITCH ----------
 const loginCard = document.getElementById("loginCard");
 const signupCard = document.getElementById("signupCard");
 
@@ -88,16 +73,17 @@ const showLogin = document.getElementById("showLogin");
 
 showSignup.addEventListener("click", (e) => {
   e.preventDefault();
+
   loginCard.classList.add("hidden-card");
   signupCard.classList.remove("hidden-card");
 });
 
 showLogin.addEventListener("click", (e) => {
   e.preventDefault();
+
   signupCard.classList.add("hidden-card");
   loginCard.classList.remove("hidden-card");
 });
-
 
 // ---------- LOGIN submit handler ----------
 function attachLoginEvents() {
@@ -123,15 +109,12 @@ function attachLoginEvents() {
       shakeField('loginPassword');
       return;
     }
-
     showToast('Logged in successfully! Welcome back.', 'success');
-
     setTimeout(() => {
       window.location.href = 'dashboard.html';
     }, 1200);
   });
 }
-
 
 // ---------- SIGNUP submit handler ----------
 function attachSignupEvents() {
@@ -146,29 +129,25 @@ function attachSignupEvents() {
     const password   = document.getElementById('signupPassword')?.value;
     const confirmPwd = document.getElementById('signupConfirm')?.value;
 
-    if (!firstName)  { showToast('First name is required', 'error'); shakeField('signupFirst'); return; }
-    if (!lastName)   { showToast('Last name is required', 'error'); shakeField('signupLast'); return; }
+    if (!firstName)  { showToast('First name is required', 'error');            shakeField('signupFirst');     return; }
+    if (!lastName)   { showToast('Last name is required', 'error');             shakeField('signupLast');      return; }
     if (!email || !email.includes('@')) { showToast('Valid university email required', 'error'); shakeField('signupEmail'); return; }
-    if (!studentId)  { showToast('Student ID number is required', 'error'); shakeField('signupStudentId'); return; }
+    if (!studentId)  { showToast('Student ID number is required', 'error');     shakeField('signupStudentId'); return; }
     if (!password || password.length < 6) { showToast('Password must be at least 6 characters', 'error'); shakeField('signupPassword'); return; }
     if (password !== confirmPwd) { showToast('Passwords do not match', 'error'); shakeField('signupConfirm'); return; }
 
     showToast(`Welcome ${firstName}! Account created successfully.`, 'success');
-
     setTimeout(() => {
       window.location.href = 'index.html';
     }, 1500);
   });
 }
 
-
-// ---------- SHAKE FIELD ----------
 function shakeField(fieldId) {
   const input = document.getElementById(fieldId);
   if (input) {
     input.style.borderColor = '#e0504a';
     input.style.animation = 'shake 0.4s ease';
-
     setTimeout(() => {
       input.style.borderColor = '';
       input.style.animation = '';
@@ -176,25 +155,18 @@ function shakeField(fieldId) {
   }
 }
 
-
-// ---------- TOAST ----------
+// ---------- Toast notification ----------
 let toastTimeout;
-
 function showToast(message, type = 'success') {
   const toast = document.getElementById('toast');
   const toastMsg = document.getElementById('toastMsg');
-
   if (!toast) return;
-
   toastMsg.textContent = message;
-
   const icon = toast.querySelector('svg');
   if (icon) {
     icon.style.color = type === 'error' ? '#e0504a' : '#5ddf7a';
   }
-
   toast.classList.add('show');
-
   clearTimeout(toastTimeout);
   toastTimeout = setTimeout(() => toast.classList.remove('show'), 3000);
 }
