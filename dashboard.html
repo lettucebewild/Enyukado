@@ -44,17 +44,8 @@
       justify-content: space-between;
       box-shadow: 0 2px 12px rgba(50,111,202,0.06);
     }
-    .navbar-left {
-      display: flex;
-      align-items: center;
-      gap: 32px;
-    }
-    .navbar-brand {
-      display: flex;
-      align-items: center;
-      gap: 9px;
-      text-decoration: none;
-    }
+    .navbar-left { display: flex; align-items: center; gap: 32px; }
+    .navbar-brand { display: flex; align-items: center; gap: 9px; text-decoration: none; }
     .navbar-brand-icon {
       width: 34px; height: 34px;
       background: var(--blue);
@@ -69,15 +60,9 @@
       color: var(--charcoal);
       letter-spacing: -0.02em;
     }
-    .navbar-right {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+    .navbar-right { display: flex; align-items: center; gap: 8px; }
     .btn-sell {
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      display: flex; align-items: center; gap: 6px;
       padding: 7px 18px;
       background: var(--peach);
       color: var(--charcoal);
@@ -90,10 +75,7 @@
       text-decoration: none;
       transition: background 0.2s, border-color 0.2s;
     }
-    .btn-sell:hover {
-      background: #ffd9a0;
-      border-color: rgba(50,111,202,0.3);
-    }
+    .btn-sell:hover { background: #ffd9a0; border-color: rgba(50,111,202,0.3); }
     .icon-btn {
       width: 38px; height: 38px;
       border-radius: 50%;
@@ -130,11 +112,7 @@
     .avatar-btn:hover { opacity: 0.85; }
 
     /* ===== MAIN LAYOUT ===== */
-    .main {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 32px 40px 60px;
-    }
+    .main { max-width: 1200px; margin: 0 auto; padding: 32px 40px 60px; }
 
     /* ===== HERO BANNER ===== */
     .hero {
@@ -173,9 +151,7 @@
       line-height: 1.6;
     }
     .hero-cta {
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      display: flex; align-items: center; gap: 8px;
       padding: 11px 24px;
       background: var(--peach);
       color: var(--charcoal);
@@ -185,7 +161,6 @@
       font-size: 0.9rem;
       font-weight: 600;
       cursor: pointer;
-      text-decoration: none;
       flex-shrink: 0;
       transition: background 0.2s, transform 0.15s;
       position: relative;
@@ -195,9 +170,7 @@
 
     /* ===== SECTION HEADERS ===== */
     .section-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      display: flex; align-items: center; justify-content: space-between;
       margin-bottom: 18px;
     }
     .section-title {
@@ -216,20 +189,11 @@
     }
     .section-link:hover { opacity: 0.7; }
 
-    /* ===== SEARCH BAR (above categories) ===== */
-    .browse-search {
-      position: relative;
-      margin-bottom: 14px;
-    }
+    /* ===== SEARCH BAR ===== */
+    .browse-search { position: relative; margin-bottom: 14px; }
     .browse-search-icon {
-      position: absolute;
-      left: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--blue);
-      pointer-events: none;
-      display: flex;
-      align-items: center;
+      position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+      color: var(--blue); pointer-events: none; display: flex; align-items: center;
     }
     .browse-search input {
       width: 100%;
@@ -245,15 +209,9 @@
       transition: border-color 0.2s, box-shadow 0.2s;
     }
     .browse-search input::placeholder { color: #b0b8c8; }
-    .browse-search input:focus {
-      border-color: var(--blue);
-      box-shadow: 0 0 0 3px rgba(50,111,202,0.1);
-    }
+    .browse-search input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(50,111,202,0.1); }
     .browse-search-arrow {
-      position: absolute;
-      right: 14px;
-      top: 50%;
-      transform: translateY(-50%);
+      position: absolute; right: 14px; top: 50%; transform: translateY(-50%);
       width: 34px; height: 34px;
       background: var(--blue);
       border-radius: 50%;
@@ -264,29 +222,20 @@
     }
     .browse-search-arrow:hover { background: var(--blue-dark); }
 
-    /* ===== CATEGORY CHIPS + SORT ROW ===== */
-    .categories-row {
-      display: block;
-      margin-bottom: 10px;
-    }   
+    /* ===== CATEGORY CHIPS ===== */
+    .categories-row { display: block; margin-bottom: 10px; }
     .categories {
-      display: flex;
-      gap: 8px;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      white-space: nowrap;
-      padding-bottom: 8px;
+      display: flex; gap: 8px;
+      flex-wrap: nowrap; overflow-x: auto;
+      white-space: nowrap; padding-bottom: 8px;
     }
     .chip {
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      display: flex; align-items: center; gap: 6px;
       padding: 7px 14px;
       border-radius: 100px;
       border: 1.5px solid #dde2ec;
       background: var(--white);
-      font-size: 0.84rem;
-      font-weight: 500;
+      font-size: 0.84rem; font-weight: 500;
       color: var(--charcoal-2);
       cursor: pointer;
       transition: border-color 0.2s, background 0.2s, color 0.2s;
@@ -300,17 +249,8 @@
     .chip span { font-size: 0.95rem; }
 
     /* ===== SORT CONTROL ===== */
-    .sort-control {
-      display: flex;
-      justify-content: flex-end;
-      margin-bottom: 32px;
-    }
-    .sort-control label {
-      font-size: 0.84rem;
-      color: var(--charcoal-3);
-      font-weight: 400;
-      white-space: nowrap;
-    }
+    .sort-control { display: flex; justify-content: flex-end; margin-bottom: 32px; }
+    .sort-control label { font-size: 0.84rem; color: var(--charcoal-3); font-weight: 400; white-space: nowrap; }
     .sort-select {
       padding: 7px 32px 7px 12px;
       border: 1.5px solid #dde2ec;
@@ -319,9 +259,7 @@
       font-size: 0.84rem;
       color: var(--charcoal);
       background: var(--white);
-      outline: none;
-      cursor: pointer;
-      appearance: none;
+      outline: none; cursor: pointer; appearance: none;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2.5'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position: right 10px center;
@@ -345,41 +283,29 @@
       cursor: pointer;
       transition: transform 0.2s, box-shadow 0.2s;
     }
-    .listing-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 32px rgba(50,111,202,0.15);
-    }
+    .listing-card:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(50,111,202,0.15); }
     .listing-img {
-      width: 100%;
-      aspect-ratio: 1;
+      width: 100%; aspect-ratio: 1;
       background: var(--light);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex; align-items: center; justify-content: center;
       font-size: 2.8rem;
       position: relative;
     }
     .listing-badge {
-      position: absolute;
-      top: 10px;
-      left: 10px;
+      position: absolute; top: 10px; left: 10px;
       background: var(--peach);
       color: var(--charcoal);
-      font-size: 0.72rem;
-      font-weight: 600;
+      font-size: 0.72rem; font-weight: 600;
       padding: 3px 8px;
       border-radius: 100px;
       letter-spacing: 0.02em;
     }
     .listing-fav {
-      position: absolute;
-      top: 8px;
-      right: 8px;
+      position: absolute; top: 8px; right: 8px;
       width: 30px; height: 30px;
       border-radius: 50%;
       background: rgba(255,255,255,0.9);
-      border: none;
-      cursor: pointer;
+      border: none; cursor: pointer;
       display: flex; align-items: center; justify-content: center;
       color: var(--charcoal-3);
       font-size: 0.9rem;
@@ -387,56 +313,35 @@
     }
     .listing-fav:hover { color: #e0504a; }
     .listing-fav.liked { color: #e0504a; }
-    .listing-info {
-      padding: 13px 14px 14px;
-    }
+    .listing-info { padding: 13px 14px 14px; }
     .listing-info h4 {
       font-family: 'Sora', sans-serif;
-      font-size: 0.9rem;
-      font-weight: 600;
+      font-size: 0.9rem; font-weight: 600;
       color: var(--charcoal);
       margin-bottom: 4px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
     .listing-info .price {
       font-family: 'Sora', sans-serif;
-      font-size: 1rem;
-      font-weight: 700;
+      font-size: 1rem; font-weight: 700;
       color: var(--blue);
       margin-bottom: 6px;
     }
     .listing-info .meta {
-      font-size: 0.78rem;
-      color: var(--charcoal-3);
-      font-weight: 300;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      font-size: 0.78rem; color: var(--charcoal-3); font-weight: 300;
+      display: flex; align-items: center; gap: 6px;
     }
-    .condition-dot {
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: #5ddf7a;
-      flex-shrink: 0;
-    }
+    .condition-dot { width: 6px; height: 6px; border-radius: 50%; background: #5ddf7a; flex-shrink: 0; }
     .condition-dot.fair { background: #f5a623; }
     .condition-dot.poor { background: #e0504a; }
 
     /* ===== RECENT ACTIVITY ===== */
-    .activity-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+    .activity-list { display: flex; flex-direction: column; gap: 10px; }
     .activity-item {
       background: var(--white);
       border-radius: var(--radius-sm);
       padding: 14px 18px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
+      display: flex; align-items: center; gap: 16px;
       border: 1px solid rgba(50,111,202,0.07);
       box-shadow: 0 2px 8px rgba(50,111,202,0.05);
     }
@@ -444,75 +349,233 @@
       width: 38px; height: 38px;
       border-radius: 10px;
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.1rem;
-      flex-shrink: 0;
+      font-size: 1.1rem; flex-shrink: 0;
     }
     .activity-icon.sell { background: rgba(50,111,202,0.1); }
     .activity-icon.buy  { background: rgba(93,223,122,0.12); }
     .activity-icon.view { background: rgba(255,231,190,0.5); }
-    .activity-text h5 {
-      font-size: 0.88rem;
-      font-weight: 500;
-      color: var(--charcoal);
-      margin-bottom: 2px;
-    }
-    .activity-text p {
-      font-size: 0.78rem;
-      color: var(--charcoal-3);
-      font-weight: 300;
-    }
-    .activity-time {
-      margin-left: auto;
-      font-size: 0.75rem;
-      color: var(--charcoal-3);
-      white-space: nowrap;
-    }
+    .activity-text h5 { font-size: 0.88rem; font-weight: 500; color: var(--charcoal); margin-bottom: 2px; }
+    .activity-text p { font-size: 0.78rem; color: var(--charcoal-3); font-weight: 300; }
+    .activity-time { margin-left: auto; font-size: 0.75rem; color: var(--charcoal-3); white-space: nowrap; }
 
-    /* ===== MODAL (Sell) ===== */
+    /* ===== MODAL BASE ===== */
     .modal-overlay {
-      position: fixed;
-      inset: 0;
+      position: fixed; inset: 0;
       background: rgba(30,40,60,0.45);
       backdrop-filter: blur(4px);
       z-index: 200;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      pointer-events: none;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none;
       transition: opacity 0.3s;
     }
-    .modal-overlay.open {
-      opacity: 1;
-      pointer-events: all;
-    }
-    .modal {
+    .modal-overlay.open { opacity: 1; pointer-events: all; }
+
+    /* ===== SELL MODAL ===== */
+    .sell-modal {
       background: var(--white);
       border-radius: var(--radius);
       padding: 32px;
-      width: 100%;
-      max-width: 480px;
+      width: 100%; max-width: 540px;
       margin: 20px;
       box-shadow: 0 24px 64px rgba(30,40,60,0.22);
       transform: translateY(20px) scale(0.97);
       transition: transform 0.3s cubic-bezier(0.34, 1.2, 0.64, 1);
+      max-height: 92vh;
+      overflow-y: auto;
     }
-    .modal-overlay.open .modal { transform: translateY(0) scale(1); }
-    .modal-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 24px;
+    .modal-overlay.open .sell-modal { transform: translateY(0) scale(1); }
+
+    /* ===== MEDIA UPLOAD ===== */
+    .upload-label {
+      font-size: 0.88rem; font-weight: 500; color: var(--charcoal-2);
+      margin-bottom: 8px;
+      display: block;
     }
-    .modal-header h3 {
+    .upload-zone {
+      border: 2px dashed #c8d3e8;
+      border-radius: var(--radius-sm);
+      background: var(--light);
+      padding: 22px 16px;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      position: relative;
+      margin-bottom: 16px;
+    }
+    .upload-zone:hover, .upload-zone.drag-over {
+      border-color: var(--blue);
+      background: rgba(50,111,202,0.04);
+    }
+    .upload-zone input[type="file"] {
+      position: absolute; inset: 0;
+      opacity: 0; width: 100%; height: 100%;
+      cursor: pointer;
+    }
+    .upload-zone-icon {
+      width: 40px; height: 40px;
+      background: rgba(50,111,202,0.1);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 10px;
+      color: var(--blue);
+    }
+    .upload-zone-title {
       font-family: 'Sora', sans-serif;
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: var(--charcoal);
-      letter-spacing: -0.02em;
+      font-size: 0.88rem; font-weight: 600;
+      color: var(--charcoal); margin-bottom: 3px;
     }
-    .modal-close {
-      width: 32px; height: 32px;
+    .upload-zone-sub {
+      font-size: 0.76rem; color: var(--charcoal-3); font-weight: 300;
+    }
+    .upload-zone-sub span { color: var(--blue); font-weight: 500; }
+
+    /* Media preview grid */
+    .media-preview-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .media-thumb {
+      width: 76px; height: 76px;
+      border-radius: var(--radius-sm);
+      background: var(--light);
+      border: 1.5px solid #dde2ec;
+      overflow: hidden;
+      position: relative;
+      flex-shrink: 0;
+    }
+    .media-thumb img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .media-thumb-video {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      background: #1e2a3a;
+      color: white;
+      font-size: 1.5rem;
+    }
+    .media-thumb-video-label {
+      position: absolute; bottom: 3px; left: 0; right: 0;
+      text-align: center;
+      font-size: 0.6rem; color: rgba(255,255,255,0.8);
+      font-weight: 500; letter-spacing: 0.04em;
+      background: rgba(0,0,0,0.35);
+      padding: 1px 0;
+    }
+    .media-thumb-remove {
+      position: absolute; top: 3px; right: 3px;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: rgba(30,40,60,0.7);
+      border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 0.65rem;
+      line-height: 1;
+      transition: background 0.15s;
+    }
+    .media-thumb-remove:hover { background: #e0504a; }
+    .media-thumb-first-badge {
+      position: absolute; bottom: 3px; left: 3px;
+      background: var(--blue);
+      color: white;
+      font-size: 0.58rem; font-weight: 600;
+      padding: 1px 5px; border-radius: 4px;
+      letter-spacing: 0.03em;
+    }
+    .upload-count-note {
+      font-size: 0.75rem; color: var(--charcoal-3);
+      text-align: right; margin-top: -10px; margin-bottom: 16px;
+    }
+
+    /* ===== ITEM VIEW MODAL ===== */
+    .item-modal {
+      background: var(--white);
+      border-radius: var(--radius);
+      width: 100%;
+      max-width: 720px;
+      margin: 20px;
+      box-shadow: 0 24px 64px rgba(30,40,60,0.22);
+      transform: translateY(24px) scale(0.97);
+      transition: transform 0.35s cubic-bezier(0.34, 1.15, 0.64, 1);
+      overflow: hidden;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .modal-overlay.open .item-modal { transform: translateY(0) scale(1); }
+
+    .item-modal-inner {
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      flex: 1;
+      min-height: 0;
+    }
+
+    /* Left: image panel */
+    .item-modal-img-panel {
+      width: 280px;
+      flex-shrink: 0;
+      background: var(--light);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 24px;
+      position: relative;
+      min-height: 320px;
+    }
+    .item-modal-emoji {
+      font-size: 5.5rem;
+      line-height: 1;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 8px 24px rgba(50,111,202,0.15));
+    }
+    .item-modal-badge-large {
+      background: var(--peach);
+      color: var(--charcoal);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 5px 14px;
+      border-radius: 100px;
+      letter-spacing: 0.03em;
+    }
+    .item-modal-img-actions {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .img-action-btn {
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.92);
+      border: 1px solid rgba(50,111,202,0.12);
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--charcoal-3);
+      font-size: 0.9rem;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+      box-shadow: 0 2px 8px rgba(50,111,202,0.08);
+    }
+    .img-action-btn:hover { background: white; color: var(--blue); border-color: var(--blue); }
+    .img-action-btn.bookmarked { color: var(--blue); border-color: var(--blue); background: rgba(50,111,202,0.08); }
+
+    /* Right: info panel */
+    .item-modal-info-panel {
+      flex: 1;
+      padding: 28px 28px 24px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .item-modal-close {
+      width: 30px; height: 30px;
       border-radius: 50%;
       border: none;
       background: var(--light);
@@ -520,19 +583,201 @@
       display: flex; align-items: center; justify-content: center;
       color: var(--charcoal-3);
       transition: background 0.2s, color 0.2s;
+      align-self: flex-end;
+      margin-bottom: 12px;
+      flex-shrink: 0;
     }
-    .modal-close:hover { background: #dde2ec; color: var(--charcoal); }
-    .modal-field {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
+    .item-modal-close:hover { background: #dde2ec; color: var(--charcoal); }
+
+    .item-modal-title {
+      font-family: 'Sora', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      letter-spacing: -0.025em;
+      margin-bottom: 4px;
+      line-height: 1.25;
+    }
+    .item-modal-price {
+      font-family: 'Sora', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--blue);
       margin-bottom: 16px;
     }
-    .modal-field label {
-      font-size: 0.88rem;
+
+    /* Metadata tags row */
+    .item-meta-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+    .meta-tag {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 11px;
+      border-radius: 100px;
+      background: var(--light);
+      border: 1px solid rgba(50,111,202,0.1);
+      font-size: 0.78rem;
       font-weight: 500;
       color: var(--charcoal-2);
     }
+    .meta-tag .dot { width: 6px; height: 6px; border-radius: 50%; background: #5ddf7a; flex-shrink: 0; }
+    .meta-tag .dot.fair { background: #f5a623; }
+    .meta-tag .dot.poor { background: #e0504a; }
+
+    /* Description */
+    .item-modal-desc-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--charcoal-3);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+    .item-modal-desc {
+      font-size: 0.9rem;
+      color: var(--charcoal-2);
+      line-height: 1.65;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+    /* Seller card */
+    .seller-card {
+      background: var(--light);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 22px;
+      border: 1px solid rgba(50,111,202,0.09);
+    }
+    .seller-avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--blue);
+      color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Sora', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .seller-info { flex: 1; }
+    .seller-name {
+      font-family: 'Sora', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 1px;
+    }
+    .seller-sub { font-size: 0.76rem; color: var(--charcoal-3); font-weight: 300; }
+    .seller-rating {
+      font-size: 0.78rem;
+      color: var(--charcoal-2);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    /* Action buttons */
+    .item-modal-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: auto;
+    }
+    .btn-buy {
+      width: 100%;
+      padding: 13px 20px;
+      background: var(--blue);
+      color: var(--white);
+      border: none;
+      border-radius: var(--radius-sm);
+      font-family: 'Sora', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      transition: background 0.2s, transform 0.15s;
+      box-shadow: 0 4px 16px rgba(50,111,202,0.28);
+    }
+    .btn-buy:hover { background: var(--blue-dark); transform: translateY(-1px); }
+    .btn-contact {
+      width: 100%;
+      padding: 11px 20px;
+      background: transparent;
+      color: var(--blue);
+      border: 1.5px solid var(--blue);
+      border-radius: var(--radius-sm);
+      font-family: 'Sora', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-contact:hover { background: rgba(50,111,202,0.07); }
+    .btn-bookmark-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 9px;
+      border-radius: var(--radius-sm);
+      background: transparent;
+      border: 1.5px solid #dde2ec;
+      cursor: pointer;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: var(--charcoal-2);
+      transition: background 0.2s, border-color 0.2s, color 0.2s;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .btn-bookmark-row:hover { border-color: var(--blue); color: var(--blue); background: rgba(50,111,202,0.05); }
+    .btn-bookmark-row.saved { border-color: var(--blue); color: var(--blue); background: rgba(50,111,202,0.07); }
+
+    /* Contact modal (sub-modal) */
+    .contact-modal {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px;
+      width: 100%; max-width: 420px;
+      margin: 20px;
+      box-shadow: 0 24px 64px rgba(30,40,60,0.22);
+      transform: translateY(20px) scale(0.97);
+      transition: transform 0.3s cubic-bezier(0.34, 1.2, 0.64, 1);
+    }
+    .modal-overlay.open .contact-modal { transform: translateY(0) scale(1); }
+
+    /* ===== COMMON MODAL BITS ===== */
+    .modal-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .modal-header h3 {
+      font-family: 'Sora', sans-serif;
+      font-size: 1.2rem; font-weight: 700;
+      color: var(--charcoal); letter-spacing: -0.02em;
+    }
+    .modal-close {
+      width: 32px; height: 32px;
+      border-radius: 50%; border: none;
+      background: var(--light);
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--charcoal-3);
+      transition: background 0.2s, color 0.2s;
+    }
+    .modal-close:hover { background: #dde2ec; color: var(--charcoal); }
+    .modal-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+    .modal-field label { font-size: 0.88rem; font-weight: 500; color: var(--charcoal-2); }
     .modal-field input,
     .modal-field select,
     .modal-field textarea {
@@ -554,42 +799,111 @@
       box-shadow: 0 0 0 3px rgba(50,111,202,0.1);
       background: var(--white);
     }
-    .modal-field textarea { height: 80px; }
+    .modal-field textarea { height: 90px; }
     .modal-row { display: flex; gap: 12px; }
     .modal-row .modal-field { flex: 1; }
     .btn-modal-submit {
       width: 100%;
-      margin-top: 8px;
+      margin-top: 4px;
       padding: 12px 20px;
       background: var(--blue);
       color: var(--white);
       border: none;
       border-radius: var(--radius-sm);
       font-family: 'Sora', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 600;
+      font-size: 0.95rem; font-weight: 600;
       cursor: pointer;
       transition: background 0.2s, transform 0.15s;
       box-shadow: 0 4px 16px rgba(50,111,202,0.3);
+      display: flex; align-items: center; justify-content: center; gap: 8px;
     }
     .btn-modal-submit:hover { background: var(--blue-dark); transform: translateY(-1px); }
 
+    /* Confirm buy modal */
+    .buy-modal {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px;
+      width: 100%; max-width: 400px;
+      margin: 20px;
+      box-shadow: 0 24px 64px rgba(30,40,60,0.22);
+      transform: translateY(20px) scale(0.97);
+      transition: transform 0.3s cubic-bezier(0.34, 1.2, 0.64, 1);
+      text-align: center;
+    }
+    .modal-overlay.open .buy-modal { transform: translateY(0) scale(1); }
+    .buy-modal-icon {
+      width: 62px; height: 62px;
+      background: rgba(50,111,202,0.1);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem;
+      margin: 0 auto 16px;
+    }
+    .buy-modal h3 {
+      font-family: 'Sora', sans-serif;
+      font-size: 1.2rem; font-weight: 700;
+      color: var(--charcoal); margin-bottom: 8px;
+    }
+    .buy-modal p {
+      font-size: 0.88rem; color: var(--charcoal-3);
+      line-height: 1.6; margin-bottom: 22px;
+    }
+    .buy-modal-item-row {
+      background: var(--light);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 22px;
+      text-align: left;
+    }
+    .buy-modal-item-emoji { font-size: 1.8rem; }
+    .buy-modal-item-name {
+      font-family: 'Sora', sans-serif;
+      font-size: 0.9rem; font-weight: 600;
+      color: var(--charcoal); margin-bottom: 2px;
+    }
+    .buy-modal-item-price {
+      font-size: 0.82rem; color: var(--blue); font-weight: 600;
+    }
+    .buy-modal-actions { display: flex; gap: 10px; }
+    .btn-cancel {
+      flex: 1; padding: 11px;
+      border: 1.5px solid #dde2ec;
+      border-radius: var(--radius-sm);
+      background: transparent;
+      color: var(--charcoal-2);
+      font-family: 'Sora', sans-serif;
+      font-size: 0.88rem; font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-cancel:hover { background: var(--light); }
+    .btn-confirm-buy {
+      flex: 1.5; padding: 11px;
+      border: none;
+      border-radius: var(--radius-sm);
+      background: var(--blue);
+      color: var(--white);
+      font-family: 'Sora', sans-serif;
+      font-size: 0.88rem; font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      box-shadow: 0 4px 12px rgba(50,111,202,0.28);
+    }
+    .btn-confirm-buy:hover { background: var(--blue-dark); }
+
     /* ===== TOAST ===== */
     .toast {
-      position: fixed;
-      bottom: 32px; right: 32px;
+      position: fixed; bottom: 32px; right: 32px;
       background: var(--charcoal);
       color: var(--white);
       padding: 14px 20px;
       border-radius: var(--radius-sm);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.88rem;
-      font-weight: 500;
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.88rem; font-weight: 500;
       box-shadow: 0 8px 32px rgba(60,60,60,0.22);
-      transform: translateY(80px);
-      opacity: 0;
+      transform: translateY(80px); opacity: 0;
       transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s;
       pointer-events: none;
       z-index: 999;
@@ -602,8 +916,10 @@
       .main { padding: 24px 20px 48px; }
       .hero { padding: 28px 24px; flex-direction: column; gap: 20px; text-align: center; }
       .listings-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
-      .categories-row { flex-direction: column; align-items: flex-start; }
-      .sort-control { align-self: flex-end; }
+      .item-modal { max-width: 95vw; }
+      .item-modal-inner { flex-direction: column; }
+      .item-modal-img-panel { width: 100%; min-height: 180px; padding: 24px; }
+      .item-modal-emoji { font-size: 4rem; }
     }
   </style>
 </head>
@@ -612,7 +928,7 @@
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar">
     <div class="navbar-left">
-      <a href="dashboard.html" class="navbar-brand">
+      <a href="#" class="navbar-brand">
         <div class="navbar-brand-icon">
           <svg width="40" height="40" viewBox="0 0 32 32" fill="none"><path d="M7 8h2l2.5 9h8l2-6H11" stroke="#ffe7be" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="13.5" cy="21.5" r="1.5" fill="#f4f5f7"/><circle cx="19.5" cy="21.5" r="1.5" fill="#f4f5f7"/></svg>
         </div>
@@ -655,7 +971,7 @@
       <span class="section-title">Browse listings</span>
     </div>
 
-    <!-- Search bar above categories -->
+    <!-- Search bar -->
     <div class="browse-search">
       <div class="browse-search-icon">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -681,7 +997,7 @@
         <button class="chip"><span>📦</span> Others</button>
       </div>
       <div class="sort-control">
-        <label for="sortSelect">Sort by:</label>
+        <label for="sortSelect">Sort by:&nbsp;</label>
         <select class="sort-select" id="sortSelect">
           <option>Newest to oldest</option>
           <option>Oldest to newest</option>
@@ -696,13 +1012,13 @@
       <span class="section-title">Recent listings</span>
       <a href="#" class="section-link">See all →</a>
     </div>
-    <div class="listings-grid">
+    <div class="listings-grid" id="listingsGrid">
 
-      <div class="listing-card">
+      <div class="listing-card" onclick="openItem(0)">
         <div class="listing-img">
           📚
           <span class="listing-badge">Books</span>
-          <button class="listing-fav" onclick="toggleFav(this)">♡</button>
+          <button class="listing-fav" onclick="event.stopPropagation(); toggleFav(this)">♡</button>
         </div>
         <div class="listing-info">
           <h4>Engineering Math Vol. 2</h4>
@@ -711,11 +1027,11 @@
         </div>
       </div>
 
-      <div class="listing-card">
+      <div class="listing-card" onclick="openItem(1)">
         <div class="listing-img">
           💻
           <span class="listing-badge">Electronics</span>
-          <button class="listing-fav" onclick="toggleFav(this)">♡</button>
+          <button class="listing-fav" onclick="event.stopPropagation(); toggleFav(this)">♡</button>
         </div>
         <div class="listing-info">
           <h4>Mechanical Keyboard</h4>
@@ -724,11 +1040,11 @@
         </div>
       </div>
 
-      <div class="listing-card">
+      <div class="listing-card" onclick="openItem(2)">
         <div class="listing-img">
           🎒
           <span class="listing-badge">Supplies</span>
-          <button class="listing-fav" onclick="toggleFav(this)">♡</button>
+          <button class="listing-fav" onclick="event.stopPropagation(); toggleFav(this)">♡</button>
         </div>
         <div class="listing-info">
           <h4>Drafting Set (Complete)</h4>
@@ -737,11 +1053,11 @@
         </div>
       </div>
 
-      <div class="listing-card">
+      <div class="listing-card" onclick="openItem(3)">
         <div class="listing-img">
           👕
           <span class="listing-badge">Fashion</span>
-          <button class="listing-fav liked" onclick="toggleFav(this)">♥</button>
+          <button class="listing-fav liked" onclick="event.stopPropagation(); toggleFav(this)">♥</button>
         </div>
         <div class="listing-info">
           <h4>NU Jacket (XL)</h4>
@@ -750,11 +1066,11 @@
         </div>
       </div>
 
-      <div class="listing-card">
+      <div class="listing-card" onclick="openItem(4)">
         <div class="listing-img">
           🎨
           <span class="listing-badge">Arts</span>
-          <button class="listing-fav" onclick="toggleFav(this)">♡</button>
+          <button class="listing-fav" onclick="event.stopPropagation(); toggleFav(this)">♡</button>
         </div>
         <div class="listing-info">
           <h4>Watercolor Set (24 pcs)</h4>
@@ -763,11 +1079,11 @@
         </div>
       </div>
 
-      <div class="listing-card">
+      <div class="listing-card" onclick="openItem(5)">
         <div class="listing-img">
           📱
           <span class="listing-badge">Electronics</span>
-          <button class="listing-fav" onclick="toggleFav(this)">♡</button>
+          <button class="listing-fav" onclick="event.stopPropagation(); toggleFav(this)">♡</button>
         </div>
         <div class="listing-info">
           <h4>USB-C Hub (7-in-1)</h4>
@@ -776,11 +1092,11 @@
         </div>
       </div>
 
-      <div class="listing-card">
+      <div class="listing-card" onclick="openItem(6)">
         <div class="listing-img">
           🎟️
           <span class="listing-badge">Tickets</span>
-          <button class="listing-fav" onclick="toggleFav(this)">♡</button>
+          <button class="listing-fav" onclick="event.stopPropagation(); toggleFav(this)">♡</button>
         </div>
         <div class="listing-info">
           <h4>JS Prom Ticket (1 slot)</h4>
@@ -789,11 +1105,11 @@
         </div>
       </div>
 
-      <div class="listing-card">
+      <div class="listing-card" onclick="openItem(7)">
         <div class="listing-img">
           🍱
           <span class="listing-badge">Food</span>
-          <button class="listing-fav" onclick="toggleFav(this)">♡</button>
+          <button class="listing-fav" onclick="event.stopPropagation(); toggleFav(this)">♡</button>
         </div>
         <div class="listing-info">
           <h4>Homemade Bento Box</h4>
@@ -838,9 +1154,128 @@
 
   </main>
 
+  <!-- ===== ITEM VIEW MODAL ===== -->
+  <div class="modal-overlay" id="itemModal">
+    <div class="item-modal">
+      <div class="item-modal-inner">
+        <!-- Left image panel -->
+        <div class="item-modal-img-panel">
+          <div class="item-modal-img-actions">
+            <button class="img-action-btn" id="itemFavBtn" title="Save to wishlist" onclick="toggleItemFav()">♡</button>
+            <button class="img-action-btn" id="itemBookmarkBtn" title="Bookmark" onclick="toggleBookmark()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </button>
+            <button class="img-action-btn" title="Share" onclick="shareItem()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </button>
+          </div>
+          <div class="item-modal-emoji" id="itemModalEmoji">📚</div>
+          <div class="item-modal-badge-large" id="itemModalCategory">Books</div>
+        </div>
+        <!-- Right info panel -->
+        <div class="item-modal-info-panel">
+          <button class="item-modal-close" id="closeItemModal">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+          <div class="item-modal-title" id="itemModalTitle">Engineering Math Vol. 2</div>
+          <div class="item-modal-price" id="itemModalPrice">₱180</div>
+
+          <div class="item-meta-tags" id="itemMetaTags">
+            <div class="meta-tag"><span class="dot"></span> Good condition</div>
+            <div class="meta-tag">📚 Books</div>
+            <div class="meta-tag">🕐 2h ago</div>
+            <div class="meta-tag">👁 12 views</div>
+          </div>
+
+          <div class="item-modal-desc-label">Description</div>
+          <div class="item-modal-desc" id="itemModalDesc">
+            No description provided.
+          </div>
+
+          <!-- Seller card -->
+          <div class="seller-card">
+            <div class="seller-avatar" id="sellerAvatar">MS</div>
+            <div class="seller-info">
+              <div class="seller-name" id="sellerName">Maria Santos</div>
+              <div class="seller-sub" id="sellerSub">BS Computer Engineering · 3rd year</div>
+            </div>
+            <div class="seller-rating">⭐ <span id="sellerRating">4.8</span></div>
+          </div>
+
+          <!-- Actions -->
+          <div class="item-modal-actions">
+            <button class="btn-buy" onclick="openBuyModal()">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              Buy Now
+            </button>
+            <button class="btn-contact" onclick="openContactModal()">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Message Seller
+            </button>
+            <button class="btn-bookmark-row" id="bookmarkRowBtn" onclick="toggleBookmark()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              Save for later
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BUY CONFIRM MODAL ===== -->
+  <div class="modal-overlay" id="buyModal">
+    <div class="buy-modal">
+      <div class="buy-modal-icon">🛒</div>
+      <h3>Confirm Purchase</h3>
+      <p>You're about to express interest in buying this item. The seller will be notified and will reach out to arrange the exchange.</p>
+      <div class="buy-modal-item-row">
+        <div class="buy-modal-item-emoji" id="buyModalEmoji">📚</div>
+        <div>
+          <div class="buy-modal-item-name" id="buyModalName">Engineering Math Vol. 2</div>
+          <div class="buy-modal-item-price" id="buyModalPrice">₱180</div>
+        </div>
+      </div>
+      <div class="buy-modal-actions">
+        <button class="btn-cancel" onclick="closeBuyModal()">Cancel</button>
+        <button class="btn-confirm-buy" onclick="confirmBuy()">Confirm →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT MODAL ===== -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="contact-modal">
+      <div class="modal-header">
+        <h3>Message Seller</h3>
+        <button class="modal-close" onclick="closeContactModal()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;background:var(--light);border-radius:8px;padding:12px 14px;margin-bottom:18px;border:1px solid rgba(50,111,202,0.09);">
+        <div style="font-size:1.5rem;" id="contactItemEmoji">📚</div>
+        <div>
+          <div style="font-family:'Sora',sans-serif;font-size:0.85rem;font-weight:600;color:var(--charcoal);" id="contactItemName">Engineering Math Vol. 2</div>
+          <div style="font-size:0.76rem;color:var(--blue);font-weight:600;" id="contactItemPrice">₱180</div>
+        </div>
+      </div>
+      <div class="modal-field">
+        <label>Your message</label>
+        <textarea id="contactMsg" placeholder="Hi! Is this item still available? I'm interested…"></textarea>
+      </div>
+      <div class="modal-field">
+        <label>Preferred meetup spot (optional)</label>
+        <input type="text" id="contactMeetup" placeholder="e.g. Library, Main lobby, Canteen…" />
+      </div>
+      <button class="btn-modal-submit" onclick="sendMessage()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        Send Message
+      </button>
+    </div>
+  </div>
+
   <!-- ===== SELL MODAL ===== -->
   <div class="modal-overlay" id="sellModal">
-    <div class="modal">
+    <div class="sell-modal">
       <div class="modal-header">
         <h3>Post a listing</h3>
         <button class="modal-close" id="closeSellModal">
@@ -886,6 +1321,22 @@
         <label>Description</label>
         <textarea id="itemDesc" placeholder="Describe the item, any defects, why you're selling it…"></textarea>
       </div>
+
+      <!-- MEDIA UPLOAD -->
+      <div style="margin-bottom:20px;">
+        <span class="upload-label">Photos / Videos <span style="color:var(--charcoal-3);font-weight:300;">(optional · up to 8 files)</span></span>
+        <div class="media-preview-grid" id="mediaPreviewGrid"></div>
+        <div class="upload-zone" id="uploadZone">
+          <input type="file" id="mediaInput" accept="image/*,video/*" multiple />
+          <div class="upload-zone-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+          <div class="upload-zone-title">Drop files here or <span style="color:var(--blue);font-weight:600;">browse</span></div>
+          <div class="upload-zone-sub">Images &amp; videos · Max 50 MB each · <span>First image = cover photo</span></div>
+        </div>
+        <div class="upload-count-note" id="uploadCountNote" style="display:none;"></div>
+      </div>
+
       <button class="btn-modal-submit" id="submitListing">Post listing →</button>
     </div>
   </div>
@@ -897,28 +1348,301 @@
   </div>
 
   <script>
-    // --- Category chip toggle ---
-    document.querySelectorAll('.chip').forEach(chip => {
-      chip.addEventListener('click', () => {
-        document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-        chip.classList.add('active');
-      });
-    });
+    // ===== LISTINGS DATA =====
+    const listings = [
+      {
+        emoji: '📚', category: 'Books', title: 'Engineering Math Vol. 2',
+        price: '₱180', condition: 'Good condition', conditionClass: '',
+        posted: '2h ago', views: 12,
+        desc: 'Gently used Engineering Math Volume 2 by Gillesania. Some highlights on chapter 3–5 but otherwise in great shape. Perfect for 2nd year engineering students.',
+        seller: { initials: 'MS', name: 'Maria Santos', sub: 'BS Computer Engineering · 3rd year', rating: '4.8' }
+      },
+      {
+        emoji: '💻', category: 'Electronics', title: 'Mechanical Keyboard',
+        price: '₱950', condition: 'Like new', conditionClass: '',
+        posted: '3h ago', views: 38,
+        desc: 'Redragon K552 TKL mechanical keyboard, red switches. Used for only 2 months, selling because I upgraded. Comes with original cable and box.',
+        seller: { initials: 'AJ', name: 'Angelo Jimenez', sub: 'BS Information Technology · 4th year', rating: '4.9' }
+      },
+      {
+        emoji: '🎒', category: 'Supplies', title: 'Drafting Set (Complete)',
+        price: '₱320', condition: 'Fair', conditionClass: 'fair',
+        posted: '5h ago', views: 7,
+        desc: 'Complete drafting set for Engineering and Architecture students. T-square, compass, triangle sets, french curve included. Slight wear on the case.',
+        seller: { initials: 'RC', name: 'Rina Cruz', sub: 'BS Architecture · 2nd year', rating: '4.6' }
+      },
+      {
+        emoji: '👕', category: 'Fashion', title: 'NU Jacket (XL)',
+        price: '₱450', condition: 'Good', conditionClass: '',
+        posted: '6h ago', views: 24,
+        desc: 'Official NU varsity-style jacket in XL. Worn only once during our org event. No stains, no damage. A steal for the price!',
+        seller: { initials: 'KL', name: 'Karl Lim', sub: 'BS Business Administration · 1st year', rating: '5.0' }
+      },
+      {
+        emoji: '🎨', category: 'Arts', title: 'Watercolor Set (24 pcs)',
+        price: '₱220', condition: 'Like new', conditionClass: '',
+        posted: '8h ago', views: 15,
+        desc: 'Maries 24-color professional watercolor set. Barely used — only swatched. Great for Fine Arts students or hobbyists.',
+        seller: { initials: 'PR', name: 'Paula Reyes', sub: 'BFA Fine Arts · 2nd year', rating: '4.7' }
+      },
+      {
+        emoji: '📱', category: 'Electronics', title: 'USB-C Hub (7-in-1)',
+        price: '₱600', condition: 'Fair', conditionClass: 'fair',
+        posted: '1d ago', views: 19,
+        desc: '7-in-1 USB-C hub with HDMI, USB 3.0 x3, SD card, microSD, and PD charging pass-through. One USB port is slightly loose but all other ports work perfectly.',
+        seller: { initials: 'BT', name: 'Bianca Torres', sub: 'BS Electronics Engineering · 3rd year', rating: '4.5' }
+      },
+      {
+        emoji: '🎟️', category: 'Tickets', title: 'JS Prom Ticket (1 slot)',
+        price: '₱250', condition: 'Valid', conditionClass: '',
+        posted: '1d ago', views: 41,
+        desc: 'One JS Prom ticket for this Saturday\'s event at the Grand Ballroom. Can\'t attend anymore due to a family commitment. Non-transferable name slot — buyer must coordinate with the organizer.',
+        seller: { initials: 'JV', name: 'Josh Vega', sub: 'BS Accountancy · 3rd year', rating: '4.8' }
+      },
+      {
+        emoji: '🍱', category: 'Food', title: 'Homemade Bento Box',
+        price: '₱85', condition: 'Fresh', conditionClass: '',
+        posted: '2d ago', views: 56,
+        desc: 'Pre-order your homemade bento box! Includes rice, adobo chicken, egg, and veggies. Made fresh every morning. Order before 7AM for 10AM pickup at the main gate.',
+        seller: { initials: 'EG', name: 'Elena Garcia', sub: 'BS Nutrition · 4th year', rating: '4.9' }
+      }
+    ];
 
-    // --- Favourite toggle ---
-    function toggleFav(btn) {
-      const liked = btn.classList.toggle('liked');
-      btn.textContent = liked ? '♥' : '♡';
+    let currentItem = null;
+    let bookmarked = false;
+
+    // ===== OPEN ITEM MODAL =====
+    function openItem(idx) {
+      const item = listings[idx];
+      currentItem = item;
+      bookmarked = false;
+
+      document.getElementById('itemModalEmoji').textContent = item.emoji;
+      document.getElementById('itemModalCategory').textContent = item.category;
+      document.getElementById('itemModalTitle').textContent = item.title;
+      document.getElementById('itemModalPrice').textContent = item.price;
+      document.getElementById('itemModalDesc').textContent = item.desc;
+
+      // Seller
+      document.getElementById('sellerAvatar').textContent = item.seller.initials;
+      document.getElementById('sellerName').textContent = item.seller.name;
+      document.getElementById('sellerSub').textContent = item.seller.sub;
+      document.getElementById('sellerRating').textContent = item.seller.rating;
+
+      // Meta tags
+      const meta = document.getElementById('itemMetaTags');
+      meta.innerHTML = `
+        <div class="meta-tag"><span class="dot ${item.conditionClass}"></span> ${item.condition}</div>
+        <div class="meta-tag">${item.emoji} ${item.category}</div>
+        <div class="meta-tag">🕐 ${item.posted}</div>
+        <div class="meta-tag">👁 ${item.views} views</div>
+      `;
+
+      // Reset fav & bookmark state
+      const favBtn = document.getElementById('itemFavBtn');
+      favBtn.textContent = '♡';
+      favBtn.style.color = '';
+      updateBookmarkUI();
+
+      document.getElementById('itemModal').classList.add('open');
     }
 
-    // --- Sell modal ---
+    document.getElementById('closeItemModal').addEventListener('click', () => {
+      document.getElementById('itemModal').classList.remove('open');
+    });
+    document.getElementById('itemModal').addEventListener('click', e => {
+      if (e.target === document.getElementById('itemModal')) document.getElementById('itemModal').classList.remove('open');
+    });
+
+    // ===== FAV (wishlist heart) =====
+    function toggleItemFav() {
+      const btn = document.getElementById('itemFavBtn');
+      const isLiked = btn.textContent === '♥';
+      btn.textContent = isLiked ? '♡' : '♥';
+      btn.style.color = isLiked ? '' : '#e0504a';
+      showToast(isLiked ? 'Removed from wishlist' : 'Added to wishlist ♥');
+    }
+
+    // ===== BOOKMARK =====
+    function toggleBookmark() {
+      bookmarked = !bookmarked;
+      updateBookmarkUI();
+      showToast(bookmarked ? 'Saved for later 🔖' : 'Removed from saved items');
+    }
+
+    function updateBookmarkUI() {
+      const iconBtn = document.getElementById('itemBookmarkBtn');
+      const rowBtn = document.getElementById('bookmarkRowBtn');
+      if (bookmarked) {
+        iconBtn.classList.add('bookmarked');
+        iconBtn.style.color = 'var(--blue)';
+        rowBtn.classList.add('saved');
+        rowBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="var(--blue)" stroke="var(--blue)" stroke-width="2.2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg> Saved`;
+      } else {
+        iconBtn.classList.remove('bookmarked');
+        iconBtn.style.color = '';
+        rowBtn.classList.remove('saved');
+        rowBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg> Save for later`;
+      }
+    }
+
+    // ===== SHARE =====
+    function shareItem() {
+      showToast('Link copied to clipboard 🔗');
+    }
+
+    // ===== BUY MODAL =====
+    function openBuyModal() {
+      if (!currentItem) return;
+      document.getElementById('buyModalEmoji').textContent = currentItem.emoji;
+      document.getElementById('buyModalName').textContent = currentItem.title;
+      document.getElementById('buyModalPrice').textContent = currentItem.price;
+      document.getElementById('buyModal').classList.add('open');
+    }
+    function closeBuyModal() { document.getElementById('buyModal').classList.remove('open'); }
+    function confirmBuy() {
+      closeBuyModal();
+      document.getElementById('itemModal').classList.remove('open');
+      showToast(`Purchase request sent! The seller will contact you 🎉`);
+    }
+    document.getElementById('buyModal').addEventListener('click', e => {
+      if (e.target === document.getElementById('buyModal')) closeBuyModal();
+    });
+
+    // ===== CONTACT MODAL =====
+    function openContactModal() {
+      if (!currentItem) return;
+      document.getElementById('contactItemEmoji').textContent = currentItem.emoji;
+      document.getElementById('contactItemName').textContent = currentItem.title;
+      document.getElementById('contactItemPrice').textContent = currentItem.price;
+      document.getElementById('contactMsg').value = '';
+      document.getElementById('contactMeetup').value = '';
+      document.getElementById('contactModal').classList.add('open');
+    }
+    function closeContactModal() { document.getElementById('contactModal').classList.remove('open'); }
+    function sendMessage() {
+      const msg = document.getElementById('contactMsg').value.trim();
+      if (!msg) { showToast('Please write a message first', 'error'); return; }
+      closeContactModal();
+      showToast(`Message sent to ${currentItem.seller.name}! 💬`);
+    }
+    document.getElementById('contactModal').addEventListener('click', e => {
+      if (e.target === document.getElementById('contactModal')) closeContactModal();
+    });
+
+    // ===== SELL MODAL =====
     const sellModal = document.getElementById('sellModal');
-    document.getElementById('openSellModal').addEventListener('click', () => sellModal.classList.add('open'));
-    document.getElementById('openSellModal2').addEventListener('click', () => sellModal.classList.add('open'));
+
+    // -- Media upload state --
+    let mediaFiles = [];
+    const MAX_FILES = 8;
+    const MAX_SIZE_MB = 50;
+
+    function resetMediaUpload() {
+      mediaFiles = [];
+      renderMediaPreviews();
+    }
+
+    function openSell() {
+      resetMediaUpload();
+      sellModal.classList.add('open');
+    }
+
+    document.getElementById('openSellModal').addEventListener('click', openSell);
+    document.getElementById('openSellModal2').addEventListener('click', openSell);
     document.getElementById('closeSellModal').addEventListener('click', () => sellModal.classList.remove('open'));
     sellModal.addEventListener('click', e => { if (e.target === sellModal) sellModal.classList.remove('open'); });
 
-    // --- Submit listing ---
+    // Drag & drop
+    const uploadZone = document.getElementById('uploadZone');
+    uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('drag-over'); });
+    uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('drag-over'));
+    uploadZone.addEventListener('drop', e => {
+      e.preventDefault();
+      uploadZone.classList.remove('drag-over');
+      handleFiles(Array.from(e.dataTransfer.files));
+    });
+
+    document.getElementById('mediaInput').addEventListener('change', e => {
+      handleFiles(Array.from(e.target.files));
+      e.target.value = ''; // reset so same file can be re-added
+    });
+
+    function handleFiles(files) {
+      const remaining = MAX_FILES - mediaFiles.length;
+      if (remaining <= 0) { showToast(`Max ${MAX_FILES} files allowed`, 'error'); return; }
+      let added = 0, skipped = 0;
+      files.slice(0, remaining).forEach(f => {
+        if (f.size > MAX_SIZE_MB * 1024 * 1024) { skipped++; return; }
+        if (!f.type.startsWith('image/') && !f.type.startsWith('video/')) { skipped++; return; }
+        mediaFiles.push(f);
+        added++;
+      });
+      if (skipped > 0) showToast(`${skipped} file(s) skipped (too large or unsupported)`, 'error');
+      renderMediaPreviews();
+    }
+
+    function removeMedia(idx) {
+      mediaFiles.splice(idx, 1);
+      renderMediaPreviews();
+    }
+
+    function renderMediaPreviews() {
+      const grid = document.getElementById('mediaPreviewGrid');
+      const note = document.getElementById('uploadCountNote');
+      grid.innerHTML = '';
+
+      mediaFiles.forEach((f, i) => {
+        const thumb = document.createElement('div');
+        thumb.className = 'media-thumb';
+
+        const removeBtn = document.createElement('button');
+        removeBtn.className = 'media-thumb-remove';
+        removeBtn.innerHTML = '&#10005;';
+        removeBtn.title = 'Remove';
+        removeBtn.onclick = () => removeMedia(i);
+
+        if (f.type.startsWith('image/')) {
+          const img = document.createElement('img');
+          img.src = URL.createObjectURL(f);
+          img.onload = () => URL.revokeObjectURL(img.src);
+          thumb.appendChild(img);
+          if (i === 0) {
+            const badge = document.createElement('div');
+            badge.className = 'media-thumb-first-badge';
+            badge.textContent = 'COVER';
+            thumb.appendChild(badge);
+          }
+        } else {
+          const vd = document.createElement('div');
+          vd.className = 'media-thumb-video';
+          vd.innerHTML = '&#9654;';
+          const vl = document.createElement('div');
+          vl.className = 'media-thumb-video-label';
+          vl.textContent = 'VIDEO';
+          thumb.appendChild(vd);
+          thumb.appendChild(vl);
+        }
+
+        thumb.appendChild(removeBtn);
+        grid.appendChild(thumb);
+      });
+
+      // Show/hide upload zone
+      if (mediaFiles.length >= MAX_FILES) {
+        uploadZone.style.display = 'none';
+      } else {
+        uploadZone.style.display = '';
+      }
+
+      if (mediaFiles.length > 0) {
+        note.style.display = 'block';
+        note.textContent = `${mediaFiles.length} / ${MAX_FILES} files added`;
+      } else {
+        note.style.display = 'none';
+      }
+    }
+
     document.getElementById('submitListing').addEventListener('click', () => {
       const name = document.getElementById('itemName').value.trim();
       const price = document.getElementById('itemPrice').value;
@@ -929,20 +1653,35 @@
       if (!cat) { showToast('Please select a category', 'error'); return; }
       if (!cond) { showToast('Please select the item condition', 'error'); return; }
       sellModal.classList.remove('open');
-      showToast(`"${name}" listed successfully!`, 'success');
+      const photoNote = mediaFiles.length > 0 ? ` with ${mediaFiles.length} photo${mediaFiles.length > 1 ? 's' : ''}` : '';
+      showToast(`"${name}" listed successfully${photoNote}! 🎉`);
       document.getElementById('itemName').value = '';
       document.getElementById('itemPrice').value = '';
       document.getElementById('itemCategory').value = '';
       document.getElementById('itemCondition').value = '';
       document.getElementById('itemDesc').value = '';
+      resetMediaUpload();
     });
 
-    // --- Toast ---
+    // ===== CATEGORY CHIPS =====
+    document.querySelectorAll('.chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+      });
+    });
+
+    // ===== LISTING CARD FAV =====
+    function toggleFav(btn) {
+      const liked = btn.classList.toggle('liked');
+      btn.textContent = liked ? '♥' : '♡';
+    }
+
+    // ===== TOAST =====
     let toastTimeout;
     function showToast(message, type = 'success') {
       const toast = document.getElementById('toast');
-      const toastMsg = document.getElementById('toastMsg');
-      toastMsg.textContent = message;
+      document.getElementById('toastMsg').textContent = message;
       const icon = toast.querySelector('svg');
       if (icon) icon.style.color = type === 'error' ? '#e0504a' : '#5ddf7a';
       toast.classList.add('show');
